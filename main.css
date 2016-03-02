@@ -1,0 +1,13 @@
+.weatherContainer {
+    border: 10px solid black;
+    width: 80%;
+    height: 250px;
+    background-color: black;
+    color: #94F3FF;
+    text-shadow: 1px 3px 3px #00BCD4;
+    border-radius: 25px;
+    font-family: monospace;
+}
+span{
+  font-size: 20px;
+}
