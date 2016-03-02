@@ -28,8 +28,7 @@ var page = {
   },
 
   styling: function () {
-      // var bandUrl = 'http://api.bandsintown.com/events/search?location=use_geoip&radius=20&format=json&app_id=woody'
-      // page.getbandData(bandUrl)
+    page.getLocation()
   },
 
   events: function () {
@@ -41,6 +40,28 @@ var page = {
     })
   },
 
+  getLocation: function () {
+    navigator.geolocation.getCurrentPosition(page.getbandDataOnLoad);
+  },
+  buildBandLocationUrl: function (coords) {
+    console.log("COORDS OF BAND", coords)
+    return "http://api.bandsintown.com/events/search?location=" + coords.latitude + "," + coords.longitude + "&radius=20&format=json&app_id=woody"
+  },
+
+  getbandDataOnLoad: function (ourCoords) {
+    $.ajax({
+      method: "GET",
+      url: page.buildBandLocationUrl(ourCoords.coords),
+      dataType: 'jsonp',
+      success: function (data) {
+        console.log(data)
+        page.addbandData(page.bandDataMap(data))
+      },
+      error: function (err) {
+        console.log(err);
+      }
+    });
+  },
 
   getbandData: function (bandUrl) {
     $.ajax({
