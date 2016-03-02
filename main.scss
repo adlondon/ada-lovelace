@@ -1,35 +1,73 @@
+body {
+  // background-image: url("./space.jpg");
+  // background-image: url("./earthnight.jpg");
+  background-image: url("./space-wallpaper1.jpg");
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+header{
+  background:linear-gradient(to top, rgba(83,184,252,0), rgba(83,184,252,0.8));
+}
+
+span.l{
+ font-size: 19px;
+ color:rgba(83,184,252,0.8);
+}
+.title{
+  font-size: 20px;
+}
 
 * {
-  font-family: Helvetica;
+  font-family: "Orbitron";
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  color:white;
+  text-shadow: 2px 2px 5px white;
+}
+
+.weatherContainer{
+  width: 85%;
+  margin: 0 auto;
+  border:2px solid #53B8FC;
+  border-radius: 12px;
+  margin-bottom: 5%;
+  padding: 1%;
+  background: linear-gradient(to top, rgba(83,184,252,0.2), rgba(83,184,252,0.8));
 }
 
 .news {
   width: 85%;
   margin: 0 auto;
+  border:2px solid #53B8FC;
+  border-radius: 12px;
+  background: linear-gradient(to top, rgba(83,184,252,0.2), rgba(83,184,252,0.7));
   .newsItems {
     display: inline-block;
     width: 20%;
+    height: 100%;
+    font-size: 12px;
     text-align: center;
     vertical-align: top;
 
     .newsTitle {
       display: inline-block;
+      width: 80%;
     }
     .newsPhoto {
       display: inline-block;
-      width: 80px;
+      padding-top: 2%;
+      border-radius: 10px;
       margin-bottom:5px;
+        width: 75px;
+        margin-right:40px;
     }
   }
 }
 
-.newsPhoto {
-  width: 75px;
-  margin-right:40px;
-}
+
 
 .bandInput {
   text-align: center;
@@ -57,7 +95,7 @@
     display: inline-block;
     width: 22%;
     padding: 15px;
-    text-align: center;
+    // text-align: center;
   }
 }
 .eventItem {

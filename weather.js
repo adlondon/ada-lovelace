@@ -10,7 +10,7 @@ var weatherTemplate ={
       '<p class="description"><%= description %></p>',
     '</div>'
   ].join('')
-}
+};
 
 var pages = {
   init: function () {
@@ -42,13 +42,22 @@ var pages = {
     $('.weatherContainer').html(weatherTmpl(data));
   },
 
+
+
+// addToDom: function($target) {
+//     $target.html('');
+//     setInterval(function() {
+//       var timeput= moment(Date.now()).format('MMMM Do YYYY, h:mm:ss a');
+//       var htmlstr = "<span class=time>"+ timeput + "</span>";
+//       $target.html(htmlstr); }, 1000);
+
   buildWeatherData: function (el) {
     console.log("ARRRRRR", el)
       return {
         name: el.name,
         temp: el.main.temp,
         description: el.weather[0].description
-      }
+      };
   },
 
 
