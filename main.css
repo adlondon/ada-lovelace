@@ -1,7 +1,8 @@
+
 .weatherContainer {
     border: 10px solid black;
     width: 80%;
-    height: 250px;
+    height: 100px;
     background-color: black;
     color: #94F3FF;
     text-shadow: 1px 3px 3px #00BCD4;
@@ -11,3 +12,49 @@
 span{
   font-size: 20px;
 }
+=======
+* {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.bandInput {
+  text-align: center; }
+  .bandInput input {
+    width: 46%;
+    padding: 5px;
+    margin-top: 25px;
+    font-size: 27px;
+    text-align: center;
+    border-radius: 36px;
+    border: 1px solid black;
+    box-shadow: none; }
+  .bandInput input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset; }
+  .bandInput input:focus {
+    outline: none; }
+
+.topRow {
+  width: 85%;
+  margin: 0 auto; }
+  .topRow div {
+    display: inline-block;
+    width: 22%;
+    padding: 15px;
+    text-align: center; }
+
+.eventItem {
+  width: 85%;
+  margin: 0 auto;
+  border-bottom: 1px solid; }
+  .eventItem div {
+    display: inline-block;
+    width: 22%;
+    padding: 15px;
+    vertical-align: middle; }
+  .eventItem a {
+    padding: 5px;
+    border: 1px solid black;
+    margin-left: 20px; }
+>>>>>>> f8fdb3a2f31a88f7081c2edaa4691bd2dfb3d0b0

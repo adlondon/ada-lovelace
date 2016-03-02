@@ -11,7 +11,7 @@ var weather = {
     $.ajax({
       method: 'GET',
       dataType:"jsonp",
-      url: "http://api.openweathermap.org/data/2.5/forecast/city?id=524901&APPID=" +"d4bb61d47f0ff2fa54c2fc465d28a37a",
+      url: "http://api.openweathermap.org/data/2.5/forecast/city?id=524901&APPID=d4bb61d47f0ff2fa54c2fc465d28a37a",
       success: function(data) {
         console.log(data);
         getWeather.addToDom(data, $('.weatherContainer'));
@@ -28,7 +28,8 @@ addToDom: function($target) {
     $target.html('');
     setInterval(function() {
       var timeput= moment(Date.now()).format('MMMM Do YYYY, h:mm:ss a');
-      var htmlstr = "<span class=time>"+"the current time is:" + timeput + "</span>";
+      var htmlstr = "<span class=time>"+ timeput + "</span>"+
+    "<p>"+data.city.name+"</p>";
       $target.html(htmlstr); }, 1000);
   },
 };
