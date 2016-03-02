@@ -5,12 +5,12 @@ $(document).ready(function(){
 var newsTemplates = {
   news: [
     '<div class="newsItems"><a target="blank" href="<%= url %>" class="newsUrl">',
-    '<p class="newsTitle"><%= title %></p>',
     '<% if(obj.photo === ""){ %>',
-    '<img src="nytimesphoto.png" class="newsPhoto"></a>',
+    '<img src="nytimesphoto.png" class="newsPhoto">',
     '<% } else { %>',
-    '<img src="<%= photo %>" class="newsPhoto"/></a>',
+    '<img src="<%= photo %>" class="newsPhoto"/>',
     '<% } %>',
+    '<p class="newsTitle"><%= title %></p></a>',
     '</div>'
   ].join("")
 }

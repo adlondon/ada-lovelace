@@ -6,6 +6,31 @@
   box-sizing: border-box;
 }
 
+.news {
+  width: 85%;
+  margin: 0 auto;
+  .newsItems {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    vertical-align: top;
+
+    .newsTitle {
+      display: inline-block;
+    }
+    .newsPhoto {
+      display: inline-block;
+      width: 80px;
+      margin-bottom:5px;
+    }
+  }
+}
+
+.newsPhoto {
+  width: 75px;
+  margin-right:40px;
+}
+
 .bandInput {
   text-align: center;
   input {
