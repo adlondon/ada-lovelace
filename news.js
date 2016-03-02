@@ -6,13 +6,17 @@ var newsTemplates = {
   news: [
     '<div class="newsItems"><a target="blank" href="<%= url %>" class="newsUrl">',
     '<p class="newsTitle"><%= title %></p>',
+    '<% if(obj.photo === ""){ %>',
+    '<img src="nytimesphoto.png" class="newsPhoto"></a>',
+    '<% } else { %>',
     '<img src="<%= photo %>" class="newsPhoto"/></a>',
+    '<% } %>',
     '</div>'
   ].join("")
 }
 
 var news = {
-  url:"http://api.nytimes.com/svc/news/v3/content/all/world/72.json?limit=5&offset=8&api-key=b061fb1c637afb2ade33c04a44be6787%3A17%3A74589446",
+  url:"http://api.nytimes.com/svc/news/v3/content/all/world/72.json?limit=5&offset=1&api-key=b061fb1c637afb2ade33c04a44be6787%3A17%3A74589446",
   init: function(){
     news.styling();
     news.events();
