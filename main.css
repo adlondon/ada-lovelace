@@ -7,9 +7,18 @@
 .bandInput {
   text-align: center; }
   .bandInput input {
-    width: 17.7%;
+    width: 46%;
     padding: 5px;
-    margin-top: 25px; }
+    margin-top: 25px;
+    font-size: 27px;
+    text-align: center;
+    border-radius: 36px;
+    border: 1px solid black;
+    box-shadow: none; }
+  .bandInput input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset; }
+  .bandInput input:focus {
+    outline: none; }
 
 .topRow {
   width: 85%;

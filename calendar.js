@@ -35,7 +35,7 @@ var page = {
   events: function () {
     $('form').on('submit', function (event) {
       event.preventDefault();
-      var enteredCity = $('#cityinput').val().replace(/\s/g,'');
+      var enteredCity = $('#cityinput').val().replace(' ', '+');
       var bandUrl = 'http://api.bandsintown.com/events/search?location=' + enteredCity + '&radius=20&format=json&app_id=woody'
       page.getbandData(bandUrl)
     })
