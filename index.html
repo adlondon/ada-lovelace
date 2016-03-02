@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css" charset="utf-8">
     <title>Lovelace</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
@@ -30,10 +31,19 @@
     <!-- andrew -->
     <div class="calendar">
 
-    </div>
+      <form class="bandInput" action="index.html" method="post">
+        <input autocomplete="off" id ="cityinput" type="text" placeholder="Enter City and State for Bands in your area">
+      </form>
 
-    <script charset="utf-8" src="bower_components/jquery/dist/jquery.js"></script>
-    <script charset="utf-8" src="bower_components/underscore/underscore.js"></script>
+      <div class="events"></div>
+
+      </div>
+
+    <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="bower_components/moment/moment.js" charset="utf-8"></script>
+    <script src="bower_components/underscore/underscore.js" charset="utf-8"></script>
+    <script src="calendar.js" charset="utf-8"></script>
     <script src="news.js" charset="utf-8"></script>
+
   </body>
 </html>
