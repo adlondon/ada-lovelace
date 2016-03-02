@@ -28,8 +28,7 @@ addToDom: function($target) {
     $target.html('');
     setInterval(function() {
       var timeput= moment(Date.now()).format('MMMM Do YYYY, h:mm:ss a');
-      var htmlstr = "<span class=time>"+ timeput + "</span>"+
-    "<p>"+data.city.name+"</p>";
+      var htmlstr = "<span class=time>"+ timeput + "</span>";
       $target.html(htmlstr); }, 1000);
   },
 };
