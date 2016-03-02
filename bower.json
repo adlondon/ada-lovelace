@@ -1,6 +1,10 @@
 {
   "name": "ada-lovelace",
+<<<<<<< HEAD
   "homepage": "https://github.com/londomain/ada-lovelace",
+=======
+  "homepage": "https://github.com/kehouse/ada-lovelace",
+>>>>>>> 3921f88549b1408fa01bc8a306fb9bfa8e619ef3
   "description": "",
   "main": "",
   "moduleType": [],
@@ -13,8 +17,14 @@
     "tests"
   ],
   "dependencies": {
+<<<<<<< HEAD
     "underscore": "^1.8.3",
     "jquery": "^2.2.1",
     "moment": "^2.11.2"
+=======
+    "jquery": "^2.2.1",
+    "moment": "^2.11.2",
+    "underscore": "^1.8.3"
+>>>>>>> 3921f88549b1408fa01bc8a306fb9bfa8e619ef3
   }
 }
