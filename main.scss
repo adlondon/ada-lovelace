@@ -1,25 +1,41 @@
 * {
+  font-family: Helvetica;
   margin:0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.bandInput {
+  text-align: center;
+  input {
+    width: 17.7%;
+    padding: 5px;
+    margin-top: 25px;
+  }
+}
+.topRow {
+  width: 85%;
+  margin: 0 auto;
+  div {
+    display: inline-block;
+    width: 22%;
+    padding: 15px;
+    text-align: center;
+  }
+}
 .eventItem {
-  width: 60%;
+  width: 85%;
   margin: 0 auto;
   border-bottom: 1px solid;
-
   div {
     display: inline-block;
     width: 22%;
     padding: 15px;
     vertical-align: middle;
-
   }
   a {
     padding: 5px;
     border: 1px solid black;
-
+    margin-left: 20px;
   }
-
 }

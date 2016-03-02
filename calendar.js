@@ -9,9 +9,15 @@ band: ['<div class="eventItem">',
   '<div class="city"><%= city %></div>',
   '<div class="datetime"><%= datetime %></div>',
   '<% if( obj.ticket_status === "available") { %>',
-  '<a class ="ticket" href="<%= ticket %>">Get Tickets</a>',
+  '<a class ="ticket" target= "blank" href="<%= ticket %>">Get Tickets</a>',
   '<% } %>',
 '</div>'
+].join(''),
+topRow: ['<div class= "topRow">',
+  '<div>BAND</div>',
+  '<div>VENUE</div>',
+  '<div>CITY</div>',
+  '<div>DATE</div>',
 ].join('')
 }
 
@@ -22,7 +28,8 @@ var page = {
   },
 
   styling: function () {
-
+      // var bandUrl = 'http://api.bandsintown.com/events/search?location=use_geoip&radius=20&format=json&app_id=woody'
+      // page.getbandData(bandUrl)
   },
 
   events: function () {
@@ -52,7 +59,9 @@ var page = {
 
   addbandData: function (data) {
     var tmpl = _.template(bandTemplate.band);
+    var topRowTmpl =  _.template(bandTemplate.topRow);
     $('.events').html('');
+    $('.events').append(topRowTmpl());
     _.each(data, function (el)
     {$('.events').append(tmpl(el))})
 
@@ -70,5 +79,4 @@ var page = {
       }
     });
   }
-
 }
