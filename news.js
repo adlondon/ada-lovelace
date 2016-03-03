@@ -63,19 +63,19 @@ var news = {
 
   addNewsToDom: function(newsArr) {
     var tmplNews = _.template(newsTemplates.news);
-    $('.news').append('');
+    $('.news').prepend('');
     _.each(newsArr, function(element){
       console.log(element);
       $('.news').append(tmplNews(element));
     })
   },
 
-  buildNewsData: function(arr){
-    return arr.map(function(el){
+  buildNewsData: function(el){
+    return el.map(function(arr){
       return {
-        title: el.title,
-        url: el.url,
-        photo: el.thumbnail_standard
+        title: arr.title,
+        url: arr.url,
+        photo: arr.thumbnail_standard
       };
     })
   },
