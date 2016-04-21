@@ -8,11 +8,11 @@ Team: Kathleen House (https://github.com/kehouse/), Patrick Coleman (https://git
 
 ----------------------------------
 
-This project was created to fulfill an assignment for The Iron Yard Charleston's Front-End Engineering course. The original assignment text is below:
+This repository was created in order to fulfill an assignment for the Front-End Engineering course at [The Iron Yard](https://www.theironyard.com/locations/charleston.html "The Iron Yard"). The original assignment text is below:
 
 ----------------------------------
 
-*Week 5, Day 3*
+**Week 5, Day 3**
 
 Shark Tank - Hackathon
 This is your first group assignment of more than 2 people
